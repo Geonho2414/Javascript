@@ -38,6 +38,7 @@ console.log(getDevice(1024));
 
 
 //  익명함수
+
 // const isPositive = (num) => {
 //     if (num > 0) {
 //         return true;
@@ -47,3 +48,25 @@ console.log(getDevice(1024));
 // };
 const isPositive = num=>num=0;  // 위의 코드를 이렇게 한 줄로 줄일 수 있음.
 console.log(isPositive(100));
+
+
+const getMaxNumber = (x,y) => {
+    if (x > y) {
+        return x;
+    } else {
+        return y;
+    }
+};
+console.log(getMaxNumber(5,6));
+
+
+const 입장확인 = (나이) => {
+    const 제한나이 = 29;
+    if (나이 <= 제한나이) {
+        return true;
+    } else {
+        return false;
+    }
+};
+console.log(입장확인(25));
+console.log(입장확인(30));
