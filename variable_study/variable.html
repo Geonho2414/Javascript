@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        /* 쓰면 안되는 문법들 */
+        /* 쓰지 않는 문법들 */
         var x = 10;
         console.log(x);
         var x = 100;
@@ -20,7 +20,19 @@
         // var = 전역변수(중괄호 블럭 안에 선언되지 않은 변수) 즉 전체 페이지에 영향을 미친다.
         console.log(b);
 
-        
+
+        /* let, const 정리 */
+        // 1. 호이스팅된 변수의 선언에는 사용할 수 없음.
+        //    이유는 let과 const가 블록스코프(제한된 스코프)를 가지므로 호이스팅된
+        //    최상위 스코프를 가질 수 없기 때문
+        // 2. 재선언 안됨
+              let v1 = 10;
+        //    let v2 = 100;  // 재선언 에러 
+        // 3. 재할당은 let은 가능, const는 불가능
+              let v2 = 1;
+              v2 = 2;  // 재할당 가능
+              const v3 = 1;
+        //    v3 = 2;  // 에러, 재할당 불가능  
     </script>
 </body>
 </html>
