@@ -1,27 +1,37 @@
-/* 모든 태그 컨트롤 : 보통 모든 페이지는 마진과 패딩을 0인 상태로 디자인을 시작한다.*/
+/* 모든 태그 컨트롤 : 보통 모든 태그는 이것을 기본 설정하고 시작 */
 * {
     margin: 0;
     padding: 0;
+    /* border까지가 컨텐츠의 크기라고 포함*/
+    box-sizing: border-box;
 }
 
 
 .s1{
     font-size: 32px;
     border: 1px solid black;
-    padding: 5;
+    padding: 10PX;
     margin: 10px;
 }
 .s2{
     font-size: 32px;
     border: 1px solid black;
     padding: 5;
-    margin: 10px;
+    margin: 0px;
     display: inline-block; /* 인라인 블록 정의 법 */
 }
 .boxsizing{
+    background-color: green;
     width: 300px;
     height: 100px;
+    margin: auto;
+    padding: 10px;
     border: 1px solid black;
+}
+.boxsizing2{
+    background-color: green;
+    width: 300px;
+    height: 100px;
     margin: auto;
     padding: 10px;
 }

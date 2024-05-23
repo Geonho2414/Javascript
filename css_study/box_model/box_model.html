@@ -8,10 +8,11 @@
 </head>
 <body>
     <!-- 중요! block 과 inline
-    block : 가로 길이는 자동으로 끝까지 채우고 세로 길이는 수동조절 가능,
-    inline : 가로 영역은 수동으로 조절 가능. 세로 영역은
-             수동으로 지정할 수가 없이 자동으로 자신의 크기만큼만 가질 수 있음.
-    inline-block : 가로 세로 모두 수동 조절이 가능함.
+    block : 가로 길이는 자동으로 끝까지 채우고 
+            세로 길이는 조정 가능, 패딩 조절 가능, 마진 조절 가능.
+    inline : 가로 길이는 컨텐츠의 크기만큼만 가능, 패딩 조절 가능, 마진 조절 가능
+             세로 영역은 컨텐츠의 크기만큼만 가능, 패딩 조절 가능, 마진 조절 불가능
+    inline-block : 기본 컨텐츠의 크기에서 가로 세로 모두 수동 조절이 가능함. 
     -->
     <!-- block-->
     <div class="s1">A</div>
@@ -21,7 +22,8 @@
     <span class="s1">D</span>
     <!-- inline-block(정의법은 CSS 파일 참조)-->
     <div class="s2">E</div>
-    <!--Box Auto 설정-->
+    <!--박스 생성 -->
     <div class="boxsizing">box</div>
+    <div class="boxsizing2">box</div>
 </body>
 </html>
