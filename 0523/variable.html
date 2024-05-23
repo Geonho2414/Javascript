@@ -12,8 +12,15 @@
         console.log(x);
         var x = 100;
         console.log(x);
-        y = 1000; // 변수의 호이스팅(hoisting)
+        y = 1000;  // 변수의 호이스팅(hoisting : 자동으로 전역의 영역에 메모리를 할당한다는 의미) 
         console.log(y);
+        let a = 10;
+        // let a = 100;  // 에러!! let과 const는 더 이상 이중선언을 허용하지 않음.
+        b = 2; // 이렇게 변수의 호이스팅이 일어날 시 자동으로 var로 인식한다.
+        // var = 전역변수(중괄호 블럭 안에 선언되지 않은 변수) 즉 전체 페이지에 영향을 미친다.
+        console.log(b);
+
+        
     </script>
 </body>
 </html>
