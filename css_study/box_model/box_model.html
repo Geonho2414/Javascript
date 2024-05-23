@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="box_model.css">
     <title>Document</title>
 </head>
 <body>
+    <!-- 중요! block 과 inline
+    block : 가로 길이는 자동으로 끝까지 채우고 세로 길이는 수동조절 가능,
+    inline : 가로 영역은 수동으로 조절 가능. 세로 영역은
+             수동으로 지정할 수가 없이 자동으로 자신의 크기만큼만 가질 수 있음.
+    inline-block : 가로 세로 모두 수동 조절이 가능함.
+    -->
+    <!-- block-->
     <div class="s1">A</div>
+    <div class="s1">B</div>
+    <!-- inline-->
+    <span class="s1">C</span>
+    <span class="s1">D</span>
+    <!-- inline-block(정의법은 CSS 파일 참조)-->
+    <div class="s2">E</div>
+    <!--Box Auto 설정-->
+    <div class="boxsizing">box</div>
 </body>
 </html>
