@@ -28,5 +28,5 @@ Monoterif / code
     letter-spacing: 5px;
     word-spacing: 10px;
     border: 1px solid gray;
-    background-color: rgb(95,158,160);
+    background-color: rgba(95,158,160,0.5);
 }
