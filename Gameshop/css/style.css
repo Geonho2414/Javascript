@@ -10,6 +10,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins, GmarketSansMedium;
+  text-decoration: none;
+  color: inherit;
 }
 .container {
   width: 70%;
@@ -60,18 +62,34 @@
   color: dodgerblue;
   background-color: white;
   cursor: pointer;
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+  transition: all 0.5s ease;
 }
 .game {
   border-radius: 5px;
   background-color: white;
   box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+  transition: all 0.5s ease;
   padding-bottom: 20px;
+}
+.game:hover {
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.4);
+  transform: translate(0px, -5px);
+  cursor: pointer;
 }
 .image {
   width: 100%;
 }
 .content p {
   margin: 0 0 5px 10px;
+}
+.product {
+  width: 100%;
+  background-color: khaki;
+  padding: 20px;
+}
+.product p {
+  margin: 10px 20px;
 }
 
 
